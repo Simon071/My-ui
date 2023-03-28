@@ -1,6 +1,6 @@
 # simi-ui-demo
 
-* Vue 2 Composition API
+* Vue 2 Options API
 * Written in JavaScript
 * Vite
 
