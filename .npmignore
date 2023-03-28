@@ -1,0 +1,8 @@
+node_modules
+examples
+.vscode
+.package
+.src
+.gitignore
+package-lock.json
+pnpm-lock.yaml

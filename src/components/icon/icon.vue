@@ -1,0 +1,190 @@
+<template>
+  <i class="simi-icon" :style="style" :class="statusName">
+    <slot></slot>
+  </i>
+</template>
+
+<script>
+export default {
+  name: "SimiIcon",
+  props: {
+    size: {
+      type: String,
+      default: "5",
+    },
+    color: {
+      type: String,
+      default: "",
+    },
+    name: {
+      type: String,
+      default: "",
+    },
+  },
+  computed: {
+    style() {
+      if (!this.size && !this.color) {
+        return {};
+      } else {
+        return {
+          ...(this.size ? { "font-size": this.size + "px" } : {}),
+          ...(this.color ? { color: this.color } : {}),
+        };
+      }
+    },
+    statusName() {
+      return "simi-icon-" + this.name;
+    },
+  },
+};
+</script >
+
+<style lang="scss" scoped>
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3981479 */
+  src: url("../../assets/fonts/iconfont.woff2?t=1679983532707") format("woff2"),
+    url("../../assets/fonts/iconfont.woff?t=1679983532707") format("woff"),
+    url("../../assets/fonts/iconfont.ttf?t=1679983532707") format("truetype");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.simi-icon-history:before {
+  content: "\e602";
+}
+
+.simi-icon-statistic:before {
+  content: "\e603";
+}
+
+.simi-icon-dept:before {
+  content: "\e604";
+}
+
+.simi-icon-track:before {
+  content: "\e605";
+}
+
+.simi-icon-log:before {
+  content: "\e606";
+}
+
+.simi-icon-realtime:before {
+  content: "\e607";
+}
+
+.simi-icon-warning:before {
+  content: "\e608";
+}
+
+.simi-icon-move:before {
+  content: "\e609";
+}
+
+.simi-icon-people:before {
+  content: "\e60a";
+}
+
+.simi-icon-order:before {
+  content: "\e60b";
+}
+
+.simi-icon-fold:before {
+  content: "\e60c";
+}
+
+.simi-icon-question:before {
+  content: "\e60d";
+}
+
+.simi-icon-people_list:before {
+  content: "\e60e";
+}
+
+.simi-icon-notice:before {
+  content: "\e60f";
+}
+
+.simi-icon-refresh:before {
+  content: "\e610";
+}
+
+.simi-icon-mark:before {
+  content: "\e611";
+}
+
+.simi-icon-scan:before {
+  content: "\e612";
+}
+
+.simi-icon-arrow_down:before {
+  content: "\e613";
+}
+
+.simi-icon-check:before {
+  content: "\e614";
+}
+
+.simi-icon-arrow_left:before {
+  content: "\e615";
+}
+
+.simi-icon-choiceness:before {
+  content: "\e616";
+}
+
+.simi-icon-community:before {
+  content: "\e617";
+}
+
+.simi-icon-upload:before {
+  content: "\e618";
+}
+
+.simi-icon-add:before {
+  content: "\e619";
+}
+
+.simi-icon-up:before {
+  content: "\e61a";
+}
+
+.simi-icon-exit:before {
+  content: "\e61b";
+}
+
+.simi-icon-down:before {
+  content: "\e61c";
+}
+
+.simi-icon-aleft:before {
+  content: "\e61d";
+}
+
+.simi-icon-descend:before {
+  content: "\e61e";
+}
+
+.simi-icon-delete:before {
+  content: "\e61f";
+}
+
+.simi-icon-up_block:before {
+  content: "\e620";
+}
+
+.simi-icon-close:before {
+  content: "\e621";
+}
+
+.simi-icon-ticket:before {
+  content: "\e622";
+}
+</style>
