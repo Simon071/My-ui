@@ -1,4 +1,4 @@
-# my-ui-demo
+# simi-ui-demo
 
 * Vue 2 Composition API
 * Written in JavaScript
